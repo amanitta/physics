@@ -34,7 +34,7 @@ A torus is a compact two-dimensional manifold characterized by periodicity in bo
 The effect of taking the quotient with respect to the cyclic group of order two is shown in the following animation
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/amanitta/physics/master/orbifold/torusToPillow.gif?token=AQJLFLY7F3FCCRASE7RYVEC7FAJO6"/>
+<img src="https://github.com/amanitta/physics/blob/master/orbifold/torusToPillow.gif"/>
 </p>
 
 This is the orbifold
@@ -59,18 +59,18 @@ The focus here is to show how strings defined on the torus transform under the e
 A general closed string just stays the same
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/amanitta/physics/master/orbifold/closedString.gif?token=AQJLFL6P2AKSYQUDOQ5JV4C7FANHG"/>
+<img src="https://github.com/amanitta/physics/blob/master/orbifold/closedString.gif"/>
 </p>
 
 ### 2.
 General open string remain open...
 <p align="center">
-<img src="https://raw.githubusercontent.com/amanitta/physics/master/orbifold/openUnbal.gif?token=AQJLFL23MV22LZ4L7K6FK327FANL6"/>
+<img src="https://github.com/amanitta/physics/blob/master/orbifold/openUnbal.gif"/>
 </p>
 ... we can see though that one of the string gets really near to closing, could there be a case in which an open string tranform into a closed one?
 
 ### 3.
 An open string with its center of mass located on one of the fixed points will close under the effect of the symmetry relation
 <p align="center">
-<img src="https://raw.githubusercontent.com/amanitta/physics/master/orbifold/openBal.gif?token=AQJLFL5S4RKJQC7SICINLFS7FAP24"/>
+<img src="https://github.com/amanitta/physics/blob/master/orbifold/openBal.gif"/>
 </p>
