@@ -56,21 +56,23 @@ with respect to the cyclic group is almost the same as a sphere. Considering thi
 The focus here is to show how strings defined on the torus transform under the effect of the quotient operation.
 
 ### 1.
-A general closed string just stays the same
+A closed string on the torus just stays the same when mapped onto the orbifold.
 
 <p align="center">
 <img src="https://github.com/amanitta/physics/blob/master/orbifold/closedString.gif"/>
 </p>
 
 ### 2.
-General open string remain open...
+In general, open strings remain open...
 <p align="center">
 <img src="https://github.com/amanitta/physics/blob/master/orbifold/openUnbal.gif"/>
 </p>
-... we can see though that one of the string gets really near to closing, could there be a case in which an open string tranform into a closed one?
+... we can see though that one of the string in the animation gets really near to closing. Could there be a case in which an open string transform into a closed one on the orbifold?
 
 ### 3.
-An open string with its center of mass located on one of the fixed points will close under the effect of the symmetry relation
+An open string with its center of mass located on one of the fixed points will close under the effect of the symmetry relation.
 <p align="center">
 <img src="https://github.com/amanitta/physics/blob/master/orbifold/openBal.gif"/>
 </p>
+These type of strings cannot move, they live centered on the fixed points and they're only allowed to oscillate. The equations of the theory call indeed for a
+term not so trivially understandable, that can though be related to the presence of these objects. They form the so-called _twisted sector_ of the theory, which is essential to preserve the consistency of the whole picture.
