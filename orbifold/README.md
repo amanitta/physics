@@ -74,4 +74,4 @@ An open string with its center of mass located on one of the fixed points will c
 <img src="https://github.com/amanitta/physics/blob/master/orbifold/openBal.gif"/>
 </p>
 This type of strings cannot move, they live centered on the fixed points and they're only allowed to oscillate. The equations of the theory call indeed for a
-term not so trivially understandable, that can though be related to the presence of these objects. They form the so-called *twisted* *sector* of the theory, which is essential to preserve the consistency of the whole picture.
+term not so trivially understandable, that can though be related to the presence of these objects. They form the so-called _twistedsector_ of the theory, which is essential to preserve the consistency of the whole picture.
