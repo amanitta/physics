@@ -12,7 +12,7 @@ What happens if, on the circle, we also ask the equivalence
 <a href="https://www.codecogs.com/eqnedit.php?latex=x&space;\sim&space;-x" target="_blank"><img src="https://latex.codecogs.com/gif.latex?x&space;\sim&space;-x" title="x \sim -x" /></a>
 
 to hold?<br>
-What we obtain with this is that on the line for example
+What we obtain with this is that, on the real line identifying the domain of the circle, for example
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=-1&space;\sim&space;1,&space;-1&space;\sim&space;-1&space;&plus;&space;2&space;\pi&space;R&space;\longrightarrow&space;1&space;\sim&space;-1&space;&plus;&space;2&space;\pi&space;R" target="_blank"><img src="https://latex.codecogs.com/gif.latex?-1&space;\sim&space;1,&space;-1&space;\sim&space;-1&space;&plus;&space;2&space;\pi&space;R&space;\longrightarrow&space;1&space;\sim&space;-1&space;&plus;&space;2&space;\pi&space;R" title="-1 \sim 1, -1 \sim -1 + 2 \pi R \longrightarrow 1 \sim -1 + 2 \pi R" /></a>
 
