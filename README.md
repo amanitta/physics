@@ -1,2 +1,2 @@
 # physics
-Miscellaneous stuff somehow related to physics
+Miscellaneous stuff somehow related to physics.
