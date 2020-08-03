@@ -41,17 +41,16 @@ This is the orbifold
 
 <a href="https://www.codecogs.com/eqnedit.php?latex={T^2}/{\mathbb{Z}_2}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?{T^2}/{\mathbb{Z}_2}" title="{T^2}/{\mathbb{Z}_2}" /></a>
 
-What happens is that the initial donut-shaped object that we have gets transformed in some sort of pillow, with four points that clearly have a special role: these are the fixed points for this transformation, and in the image are located at the corners of the pillow. The presence of such points is what makes this space
-qualitatively different from a sphere, though through a mathematical process called _blowup_ the two could be basically made equivalent to each other.
+What happens is that the initial donut-shaped object that we have gets transformed in some sort of pillow, with four points that clearly play a special role: these are the fixed points for this transformation (it can be seen that they actually don't move), and in the image are located at the corners of the resulting pillow. The presence of such points is what makes this space qualitatively different from a sphere, though through a mathematical process called _blowup_ the two could be basically made equivalent to each other.
 
 ## Short glance into String Theory
 One of the most well-known predictions of String Theory is the presence of extra spatial dimensions in which these tiny objects should be allowed to vibrate.</br>
 In order to explain the reason why such dimensions have not been detected is saying that they are compactified. To get the idea of what this means, a very common
 example is that of considering a very long and thin pipe. Someone looking from the distance would certainly think of that object as being 1-dimensional, having only length, but no real thickness, like a hair. A bug moving on the pipe, on the other end, would experience the presence of the second dimension, which was not manifest to the other observer for it was compactified with a radius too small to be perceived.</br>
-In almost the same fashion, (most) string theorists believe the presence of multiple other spatial dimensions has never been detected in experiments because
+In almost the same fashion, string theorists believe the presence of multiple other spatial dimensions has never been detected in experiments because
 their radii of compactification are way smaller than what current technology allows to investigate.</br>
-With that being said, let's go back to the torus: this is indeed a quite simple, yet instructive example to start understanding how compactifications works.</br>
-Indeed, it is quite difficult to perform calculations considering compact spaces other than the torus. Anyway we saw how the orbifold obtained taking the quotient
+With that being said, let's go back to the torus: this is indeed a quite simple, yet instructive example to start understanding how compactification works.</br>
+In fact, it is quite difficult to perform calculations on compact spaces other than the torus. Anyway, we saw how the orbifold obtained taking the quotient
 with respect to the cyclic group is almost the same as a sphere. Considering this particular space is though also very interesting.</br>
 The focus here is to show how strings defined on the torus transform under the effect of the quotient operation.
 
@@ -67,7 +66,7 @@ In general, open strings remain open...
 <p align="center">
 <img src="https://github.com/amanitta/physics/blob/master/orbifold/openUnbal.gif"/>
 </p>
-... we can see though that one of the string in the animation gets really near to closing. Could there be a case in which an open string transform into a closed one on the orbifold?
+... we can see though that one of the strings in the animation gets really near to closing. Could there be a case in which an open string transform into a closed one on the orbifold?
 
 ### 3.
 An open string with its center of mass located on one of the fixed points will close under the effect of the symmetry relation.
