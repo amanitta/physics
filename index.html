@@ -1,6 +1,137 @@
-<h1>Physics</h1>
-<p>Trying out how GitHub pages work</p>
-<p>I'm still working on learning HTML and CSS, so this page will be quite sloppy...</p>
-<p>DEBUG: looking for new content</p>
-<img src='./orbifold/openBal.gif'>
+<html>
 
+<head>
+  <title>ISIN Analyzer</title>
+  <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+  <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+  <py-env>
+   - numpy
+   - pycountry
+   - pandas
+  </py-env>
+</head>
+
+<style>
+    input[type=text], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    
+    input[type=submit] {
+      width: 100%;
+      background-color: #4c4faf;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    
+    p {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+</style>
+
+<body>
+  
+    <h1>Physics</h1>
+    <p>Trying out how GitHub pages work</p>
+    <p>I'm still working on learning HTML and CSS, so this page will be quite sloppy...</p>
+    <p>DEBUG: looking for new content</p>
+    <img src='./orbifold/openBal.gif'>
+
+    <form onsubmit="return false">
+        <label for="isin">Enter ISIN:</label><br>
+        <input type="text" id="isin" name="isin" placeholder="ISIN here"><br>
+
+        <input pys-onClick="sub" type="submit" id="btn-form" value="check" hidden>
+	
+    </form> 
+  
+    <p id='country'></p>
+    <p id='nsin'></p>
+    <p id='checksum'></p>
+
+
+    <py-script>
+
+      import numpy as np
+      import string
+      import pycountry
+      import pandas as pd
+
+      country_list = list(pycountry.countries)
+      alpha2 = []
+      names = []
+
+      # setting up the look-up df for the ISO codes
+      for i in range(len(country_list)):
+        names.append(country_list[i].name), alpha2.append(country_list[i].alpha_2)
+
+      df_iso = pd.DataFrame({'alpha2': alpha2, 'name': names})
+
+      # creating the conversion dictionary 
+      chars = list(np.arange(0, 10).astype(str)) + list(string.ascii_lowercase)
+      nums = [i for i in range(len(chars))]
+      alpha_to_digit = {k: v for k, v in zip(chars, nums)}
+
+
+      def isin_check(isin: str, verbose: bool=False):
+          if len(isin) != 12:
+          	return ('NOT VALID - ISIN must have a length of 12 characters', None, None)
+
+          iso_code = isin[:2]
+          if iso_code in alpha2:
+            country = df_iso[df_iso.alpha2 == iso_code].name.iloc[0]
+          else:
+            return ('NOT VALID - unknown country ISO', None, None)
+
+          # last digit check (luhn algorithm)
+          target = int(isin[-1])
+          test_isin = isin[:-1]
+
+          mapped = list(''.join([str(alpha_to_digit[c]) for c in list(test_isin.lower())]))
+          mapped.reverse()
+
+          doubled = [int(mapped[i]) * (1 + (1 - i % 2)) for i in range(len(mapped))]
+
+          final = [n % 10 + int(n / 10) for n in doubled]
+          check = (10 - sum(final) % 10) % 10
+
+          if verbose:
+              print('target:', target)
+              print('check:', check)
+
+          if check == target:
+              return (
+                f'country: {iso_code} - {country}',
+                f'NSIN: {isin[2:11]} - ',
+                f'checksum: {isin[-1]} - OK',
+              )
+
+          else:
+              return ('NOT VALID - wrong checksum', None, None)
+              
+      def sub(*args,**kwargs):
+          res = isin_check(Element('isin').value)
+          
+          Element('country').write(res[0]) 
+          Element('nsin').write(res[1]) 
+          Element('checksum').write(res[2]) 
+          
+    </py-script>
+
+</body>
+</html>
